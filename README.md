@@ -22,11 +22,11 @@ We welcome contributions from anyone! Whether you're:
 
 Just follow these steps:
 
-1. Fork the repository
-2. Create a new branch for your changes (`git checkout -b your-feature`)
+1. **Fork** the repository
+2. Create a **new branch** for your changes (`git checkout -b your-feature`)
 3. Make your edits
-4. Commit with a clear message (`git commit -m "Add questions from section X"`)
-5. Push and submit a pull request
+4. **Commit** with a clear message (`git commit -m "Add questions from section X"`)
+5. **Push** and submit a **pull request**
 
 **Note:** By submitting a pull request, you agree that your contribution can be used and modified under the terms of this project's GPL v3 license.
 
