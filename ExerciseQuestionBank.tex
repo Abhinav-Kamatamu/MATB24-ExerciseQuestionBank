@@ -134,14 +134,14 @@
 
 % ---------- PROBLEMS ---------- 
 \problem{
-  2.1.1. Consider the set $X = \Q \setminus \{0\}$ and the map $\star$ is depicted by $a \star b = \frac{a}{b}$. Is $\star$ a binary operation?
+  2.1.1. Consider the set $X = \Q \setminus \{0\}$ and the map $\star$ is depicted by $a \star b = \frac{a}{b}$. Is $\star$ an associative binary operation?
 }
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
 \problem{
-  2.1.2. Is $(\cP(\N), \cap)$ a monoid? what is the identity element? How about $(\cP(\N), \cup)$ for any arbitrary set $X$?
+  2.1.2. Is $(\cP(\N), \cap)$ a monoid? what is the identity element? How about $(\cP(X), \cup)$ for any arbitrary set $X$?
 }
 \begin{solution}
   % ==== Place for solution here ====
@@ -187,7 +187,7 @@ exist integers $r$ and $s$ such that $mr + ns = 1$.
 
 
 \problem{
-  2.2.6. Prove that the 2-tuple $(S, \circ)$, where $S$ is the set of symmetries of a square and $\circ$ is the composition operation, does indeed form a group. Moreover, find the symmetry
+  2.2.6. Prove that the 2-tuple $(S, \circ)$, where $S$ is the set of rotational symmetries of a square and $\circ$ is the composition operation, does indeed form a group. Moreover, find the symmetry
 group of a rectangle.
 }
 \begin{solution}
@@ -248,7 +248,7 @@ suppose that $\alpha \in C(\cR)$. Is $\alpha^{-1} \in C(\cR)$?
   \begin{enumerate}
     \item Let $\F$ be any field. Suppose that $\alpha$ and $\beta$ are two elements of an extension field $\K$ of $\F$. Then $\F(\alpha)$ and
 $\F(\beta)$ are always distinct extension fields of $\F$.
-    \item Given any set $X$, there is no operation · that can be defined on $[X]^{\leq\left\|X\right\|}$ that makes it a group.
+    \item Given any set $X$, there is no operation · that can be defined on $[X]^{\leq\left|X\right|}$ that makes it a group.
     \item Given a monoid $(\mathcal{S}, *)$ there exists a binary operation $\cdot$ on $\mathcal{S}$ such that $(\mathcal{S}, \cdot)$ no longer admits an identity element. If so, what assumption did you need to make?
     \item $(\R, \cdot)$ forms a group.
     \item $(\R, +)$ forms a group with the identity element being 1.
@@ -316,7 +316,7 @@ Let $T\colon V\to W$ be a linear transformation from $V$ to $W$. Then:
 \begin{enumerate}
     \item For all $x,\,y\in V$, $T(x-y)=T(x)-T(y)$
     \item T maps the zero vector $\vec{0}_V$ of $V$ to the zero vector $\vec{0}_W$ of W.
-    \item If $T'\colon W\to Z$ is also a linear transformation, their composition $T'\circ T$ is also a linear transformation from $V$ to $Z$ where $T'\circ T=T'(T(v))$.
+    \item If $T'\colon W\to Z$ is also a linear transformation, their composition $T'\circ T$ is also a linear transformation from $V$ to $Z$ where $T'\circ T=T'(T(v))$. So for every vector $\vec{v} \in V$, we have $(T'\circ T)(\vec{v}):=T'(T(\vec{v}))$.
     \item If $V_1$ is a subspace of $V$ and $W_1$ is a subspace of $W$, then $T[V_1]$ is a subspace of $W$ and $T^{-1}[W_1]$ is a subspace of $V$.
 \end{enumerate}
 }
@@ -325,35 +325,44 @@ Let $T\colon V\to W$ be a linear transformation from $V$ to $W$. Then:
 \end{solution}
 
 
-\problem{3.4.2. Prove Theorem 2.4.2 (currently under fix. please ignore this question)}
-\vspace{0.8em}
+\problem{
+  3.4.2. Prove $$T: V \to W \text{ is injective } \iff \ker T = \{\vec{0}\}$$}
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
-
-\problem{3.4.3. Prove Theorem 3.4.2, namely, \\
-  Show that $(\cL(V,W),\boxplus,\odot,(\F,+\cdot))$ forms a vector space over $\F$, where $\boxplus$ and $\odot$ are the pointwise addition of linear maps and scalar multiplication with the linear map in $W$, respectively. \\
+\problem{
+  3.4.3 $(\mathcal{L}(V,W), \boxplus, \odot, (\mathbb{F}, +, \cdot))$ forms a vector space over $\mathbb{F}$, where $\boxplus$ and $\odot$ are the pointwise addition of linear maps and scalar multiplication with the linear map in $W$, respectively. \\ \\
+  That is given $T, S \in \mathcal{L}(V,W)$ and $\alpha \in \mathbb{F}$
+    $$T \boxplus S := T \underbrace{+}_{W} S$$
+    $$\alpha \odot T := \alpha \underbrace{\cdot}_{W} T$$
+  So, given any $v \in V$ the image of $v$ under the linear maps $T \boxplus S$ and $\alpha \odot T$ would be $T(v) +_W S(v)$ and $\alpha \cdot_W T(v)$ respectively.\\ \\
   That is, $\cL(V,W)$ is closed under both $\boxplus$ and $\odot$. That is to show that $T\boxplus S$ and $\alpha \odot T$ are indeed linear transformations from V to W and all the axioms of a vector space are satisfied.
 }
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
-
-\problem{3.4.4. Prove that a linear map $T\colon V\to W\text{ is invertible }\iff T\text{ is injective and surjective}$.}
-\begin{solution}
-  % ==== Place for solution here ====
-\end{solution}
-\newpage
-
-\problem{3.4.5. Let $V$ and $W$ be two vector spaces over a field $\F$ with dimensions $n$ and $m>3$ respectively. Construct three different linearly independent maps from $V$ to $W$.}
+\problem{
+  3.4.4. Prove: \\ Let $V$ and $W$ be two vector spaces over $\F$ with $\text{dim}(V) = n$ and $\text{dim}(W ) = m$. Then, $\text{dim}(\cL(V, W )) = mn$\\\\
+  Hint: Note that a linear tranformation $T$ is determined by its action on its basis elements of its domain. So, if $\mathcal{B}$ is a basis for $V$ over $\F$, and $T\in\cL(V, W)$, then as long as we know what $T(b)$ is for every $b \in \mathcal{B}$, (the basis could be finite or infinite) we could then determine the image of an arbitrary vector $v \in V$. Since $v = \sum\limits_{i=1}^{n} \alpha_i b_i$ for some $n \in w$, $b_i \in \mathcal{B}$, and $\alpha_i \in \mathbb{F}$, then by the properties of linear operators we have: $$T(v) = \sum_{i=1}^{n} \alpha_i T(b_i)$$
+}
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
+\problem{3.4.5. Prove that a linear map $T\colon V\to W\text{ is invertible }\iff T\text{ is injective and surjective}$.}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
 
-\problem{3.4.6. Prove whether or not the triple $(\cL(\R,\,\R),\,+,\,\cdot)$ forms a subring of $\mathcal{F}(\R)$ under point-wise addition and multiplication.}
+\problem{3.4.6. Let $V$ and $W$ be two vector spaces over a field $\F$ with dimensions $n$ and $m>3$ respectively. Construct three different linearly independent maps from $V$ to $W$.}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+
+\problem{3.4.7. Prove whether or not the triple $(\cL(\R,\,\R),\,+,\,\cdot)$ forms a subring of $\mathcal{F}(\R)$ under point-wise addition and multiplication.}
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
