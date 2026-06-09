@@ -95,6 +95,7 @@
 \newcommand{\cP}{\mathcal{P}}
 \newcommand{\cL}{\mathcal{L}}
 \newcommand{\cC}{\mathcal{C}}
+\newcommand{\cB}{\mathcal{B}}
 
 \begin{document}
 
@@ -131,6 +132,7 @@
 %   \mathcal{P} => \cP
 %   \mathcal{L} => \cL
 %   \mathcal{C} => \cC
+%   \mathcal{C} => \cB
 
 % ---------- PROBLEMS ---------- 
 \problem{
@@ -367,7 +369,72 @@ Let $T\colon V\to W$ be a linear transformation from $V$ to $W$. Then:
   % ==== Place for solution here ====
 \end{solution}
 
+\problem{
+  3.6.1. Let $V$ and $W$ be two vector spaces over $\F$ with $\dim(V ) = n$ and $\dim(W ) = m$. Then
+$\dim(\cL(V, W )) = mn$
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
 
+\problem{
+  3.6.2. Suppose $A$ and $B$ are two similar matrices of size $n$. Prove whether or not they represent, or
+can be viewed as matrix representations of the same linear transformation relative to suitable ordered bases.
+}
+
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  3.6.3. True/False. Justify
+  \begin{enumerate}
+    \item Let $\cB$ and $\cB'$ be two ordered bases for the vector space $\R^n$ over $\R$. Then $\det(\cM_{\cB}^{\cB'}) = 1$
+    \item For all choices of ordered bases $\cB$ and $\cB'$ for $\R^n$, $\det(\cM_{\cB}^{\cB'})\neq 0$.
+    \item Let $T \in \cL(V, W)$ be two vector spaces of dimension $n$ over a field $\F$. If $T$ is surjective, then it must be an
+    isomorphism.
+    \item $\mathbb{P}_{10}[x] \cong \R^{11}$.
+    \item $T \in \cL(V, W)$ is an isomorphism $\iff \dim(V) = \dim(W)$.
+    \item There are finite dimensional vector spaces $V$ and $W$ such that $\dim(\cL(V, W)) = 32$.
+  \end{enumerate}
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  4.2.1 For a basic vector space $V$ over $\C$, prove the following property of the inner product:
+  $$\forall u, v, w \in V, \langle v + u, w \rangle = \langle v, w \rangle + \langle u, w \rangle$$
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  4.2.2 Verify the following function is an inner product on $\cC_0([0,1])$
+  $$\langle \cdot, \cdot \rangle: \cC_0([0,1]) \times \cC_0([0,1]) \to \R$$
+  $$ \langle f(x), g(x) \rangle = \int_{0}^{1} f(x)g(x)dx $$
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+
+\problem{
+  4.2.3 Verify the following function is an inner product on $\C^n$
+  $$ \vec{\alpha} = (\alpha_1, \alpha_2, \dots, \alpha_n), \quad \vec{\beta} = (\beta_1, \beta_2, \dots, \beta_n) \in \C^n$$
+  $$\langle \vec{\alpha}, \vec{\beta} \rangle = \sum_{i=1}^{n} \overline{\alpha_i}{\beta_i}$$
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  4.2.4 Could we have defined the inner product on $\C^n$ by $\langle \vec{\alpha}, \vec{\beta} \rangle = \sum_{i=1}^{n} {\alpha_i}\overline{\beta_i}$. Would it be an inner product over $\C$?
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
 
 % ========== START HERE ==========
 \end{document}
