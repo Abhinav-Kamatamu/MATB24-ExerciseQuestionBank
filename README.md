@@ -13,6 +13,20 @@ Please do consider contributing and adding new questions as they roll out. It is
 2. **Open the file** and work through the questions
 3. **Submit improvements** via pull requests (see Contributing below)
 
+## Maintaining Your Solutions
+
+Along with being a database of all the quesitons, this is also supposed to serve as a formating opiton for your solutions. Please follow the following steps to maintain your soluitons:
+
+1. Clone/fork the repo locally
+2. Create a branch called solutions with `git checkout -b Solutions`
+3. Add your solutions to each of the questions.
+4. Commit your solution changes
+5. Update your questions with `git pull origin main --no-rebase`
+
+In the very rare case of merge conflicts, please resolve them. (I personally prefer VS code for resolving conflicts )
+
+Always switch back to main before contributing to additional quesitons. Please do not add solutions to the `main` branch.
+
 ## Contributing
 
 We welcome contributions from anyone! Whether you're:
