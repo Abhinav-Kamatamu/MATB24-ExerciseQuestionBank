@@ -430,11 +430,70 @@ can be viewed as matrix representations of the same linear transformation relati
 \end{solution}
 
 \problem{
-  4.2.4 Could we have defined the inner product on $\C^n$ by $\langle \vec{\alpha}, \vec{\beta} \rangle = \sum_{i=1}^{n} {\alpha_i}\overline{\beta_i}$. Would it be an inner product over $\C$?
+  4.2.4 Could we have defined the inner product on $\C^n$ by $\langle \vec{\alpha}, \vec{\beta} \rangle = \sum_{i=1}^{n} {\alpha_i}\overline{\beta_i}$. Would it be an inner product over $\C^n$?
 }
 \begin{solution}
   % ==== Place for solution here ====
 \end{solution}
 
-% ========== START HERE ==========
+\problem{
+  4.2.5. Let $(V, \langle \cdot, \cdot, \rangle)$ be an inner product space. 
+  Then V is a normed vector space with norm $\|v\| = \sqrt{\langle v, v \rangle}$. Prove the positive-definiteness of the norm.
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  4.2.6. Could we ever obtain equality in the Cauchy-Schwarz inequality? i.e, $$|\langle u, v \rangle| \leq \sqrt{\langle u, u \rangle} \sqrt{\langle v, v \rangle} $$
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{4.2.7. Prove the generalised version of the Pythagorean Theorem. i.e., Let $V$ be an inner product space. 
+  Let $u, v$ be any two orthogonal vectors in $V$. Then:
+  $$\|u_v\|^2 = \|u\|^2 + \|v\|^2$$ 
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  4.2.8. Define the discrete metric $d$ on a vector space $V$ as follows:
+  $$
+      \forall u, v \in V, \quad d((u,v)) =
+      \begin{cases}
+      0 & \text{if } u = v, \\
+      1 & \text{otherwise.}
+      \end{cases}
+  $$
+  Verify that $d$ is indeed a metric on $V$.
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  4.2.9. In Example 4.2.9, we define a metric on $\cC_0([0,1], \R)$ as follows:
+  $$
+  d(f(x),g(x)) \longmapsto \int_{0}^{1}|f(x)-g(x)| \psi(x)dx$$
+  $$
+  (\text{where } \psi: [0,1] \to (0, \infty) \text{ is any fixed continuous function and } \psi \neq 1 )
+  $$
+  Prove that function $d$ is indeed a metric on $\cC_0([0,1], \R)$. Make sure you understand it well. What happens if $\psi$ is not continuous?
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{
+  4.2.10. Let $(V, \|\cdot\|)$ be a normed vector space. Also, let $\|\cdot\|$ 
+  follow the paralellogram law: 
+  $$\| u + v \|^2 + \| u - v \|^2 = 2(\|u\|^2 + \|v\|^2)$$
+  Define the inner product on $V$ as:
+  $$(u,v) \longmapsto \langle u,v\rangle = \frac{1}{4}\left( \|u+v\|^2 - \|u-v\|^2 + i\|u-iv\|^2 - i\|u+iv\|^2 \right)$$
+  Prove that $\langle \cdot, \cdot \rangle$ is indeed an inner product on $V$.
+}
+
 \end{document}
