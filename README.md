@@ -7,6 +7,11 @@ A collection of questions from Pourya's lecture notes for the course MATB24H3, c
 This repository contains practice questions and exercises from lecture materials, which are to be submitted along with the final exam for bonus points. It's designed to help students by having all the questions in one organised location.
 
 Please do consider contributing and adding new questions as they roll out. It is helpful to everyone in the course.
+
+## Print-Friendly Version!
+
+For those who wish to submit the questions in written form and not typed out, there is a print_friendly version that gives ample space to print the page and write the solution on the paper itself.
+
 ## How to Use
 
 1. **Clone or Fork** the repository
