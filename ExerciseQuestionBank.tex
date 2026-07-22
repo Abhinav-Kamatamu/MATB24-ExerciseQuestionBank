@@ -508,8 +508,25 @@ Hint: Null($A^\mathsf{T}A$) = Null(A), and $A^\mathsf{T}A$ is a square matrix.
   % ==== Place for solution here ====
 \end{solution}
 
+\problem{4.4.1
+[Equivalent Characterizations of Orthogonal Operators] Let $V$ be a finite-
+dimensional real inner product space, and let $T : V \to V$ be a linear map. Then the following are
+equivalent.
+\begin{enumerate}
+  \item $T$ is an orthogonal operator.
+  \item $\langle T(v), T(w) \rangle = \langle v, w \rangle$ for all $v, w \in V$.
+  \item $\|T(v)\| = \|v\|$ for all $v \in V$.
+  \item $T$ maps every orthonormal basis of $V$ onto an orthonormal basis of $V$.
+  \item If $\widehat{A}$ is the matrix representation of $T$ with respect to any orthonormal basis of $V$, then $$\widehat{A}^T \widehat{A} = \widehat{I}$$.
+  \item $T^{-1} = T^*$, where $T^*$ denotes the adjoint of $T$.
+\end{enumerate}
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
 \problem{
-  Prove properties of eigen vectors:
+  5.1.1. Prove properties of eigen vectors:
   \begin{enumerate}
     \item For any $k \in \N, \, A^k \vec{v} = \lambda^k \vec{v}$
     \item Let $E_\lambda = \{0\} \cup \{\text{eigenvectors associated with } \lambda\}$, then $E_\lambda$ is a subspace of the n-space! ($\C^n$ or $\R^n$)
@@ -520,4 +537,45 @@ Hint: Null($A^\mathsf{T}A$) = Null(A), and $A^\mathsf{T}A$ is a square matrix.
   % ==== Place for solution here ====
 \end{solution}
 
+\problem{
+  5.3.1. Find and verify the spectral decomposition of $A = \begin{bmatrix} 3 & -2 \\ -2 & 0 \end{bmatrix}$
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{5.3.2 Given $A = M_{n\times n}(\C)$, prove:
+\begin{enumerate}
+  \item $(A^*)^* = A$
+  \item $(A + B)^* = A^* + B^*$
+  \item $\forall B \in M_{n\times n}(\C), (AB)^* = B^*A^*$
+\end{enumerate}
+}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{5.3.3 Prove the eigenvalues of the Hermitian matrix are real.}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{5.3.4. True or False: Suppose $A \in M_{n\times n}(\C)$ is diagonalizable. Then $A$ is Hermitian.}
+\begin{solution}
+  % ==== Place for solution here ====
+\end{solution}
+
+\problem{5.3.5. Convince yourself that:
+\[\widehat{U_2} \text{ is unitary, and } \widehat{U_2}^* \widehat{C} \widehat{U_2} =
+\left[
+\begin{array}{c|ccc}
+\lambda_1 & * & \cdots & * \\
+\hline
+0 & & & \\
+\vdots & & \text{\Large B} & \\
+0 & & &
+\end{array}
+\right]\]
+(Refer to proof of Schur's Lemma on page 162 for details on terms.)
+}
 \end{document}
